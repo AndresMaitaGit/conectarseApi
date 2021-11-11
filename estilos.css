@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .mobiliario {
+	text-align: center;
+}
+
+.contenedor .mobiliario .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .mobiliario .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #2c009c;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+	opacity: 0.5; 
+	transition: all 1s;
+}
+.paginacion:hover {
+	opacity: 1;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #6f36ff;
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #d80085;
+}
